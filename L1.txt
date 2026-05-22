@@ -1,4 +1,4 @@
-•Use Of Git --> To Upload Files With Track Of Updation Of Each Line And Files Added.
+•Use Of Git ---> To Upload Files With Track Of Updation Of Each Line And Files Added.
 .          --> To Work In A Team...such that any developer can makes changes in the repository.
 
 •repository --> Projects in Git
