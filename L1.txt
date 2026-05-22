@@ -1,0 +1,91 @@
+•Use Of Git --> To Upload Files With Track Of Updation Of Each Line And Files Added.
+.          --> To Work In A Team...such that any developer can makes changes in the repository.
+
+•repository --> Projects in Git
+Commit --> Save Changes
+
+#Some Commands
+.                                                               •Git Commands
+
+•Clone
+-Cloning Means to make a clone of a respective repository on your local machine.
+-Local (pc , lapton)  , Remote (GitHub).
+git clone - link - (on git , tap the  repo you need the link off and click on the word 'code' in green colour)
+
+•Status
+-Status displays the state of code.
+- git status -
+•if you change your code or add a new file in vs then use git status to check if the change has happened on git repo or not.
+•Since now the file is modified or newly made -> we need to add it to git -> - git add filename - or - git add . -(if many files are to be added)
+to commit -> git commit -m "some message"....by doing this commit happens but when you go to git you won't see the change
+
+•Push Command
+-used to refresh the git page to see all the changes made(all commitments).(local repo to remote repo)
+- git push origin main - ...origin is the origin repo and main is its default branch.
+- since many changes are made in the code and we need to write the whole git push origin main what we do is
+- use git push -u origin main....now next time when we write - git push - it knows to push in origin repo and main branch 
+
+//4 types of status 
+1. Untracked -> New File Added But In Vs And Not In Git
+2. modifies -> Changes To A Existing Git File in vs but not in git
+3. staged -> file added and ready to be commited
+4. unmodified -> unchanged
+
+•init command 
+-used to create a new git repo or add the current written project in git
+use - git init -
+use - git remote add origin link -(the link is generated on github by clicking on repositories from top right corner profile button)(readme off)
+use - git remote -v - -> to verify remote
+use -  git branch - -> to verify branch
+use - git branch -M name - -> to rename the branch
+
+.                                                               •Normal Commands
+
+•- cd - command is used to change directory(going from the inner to outer folder)
+on terminal the name of folder displayed behind the % shows the current folder
+cd -folder name- --> takes u to the folder that you entered.
+
+•- clear - clears the terminal
+ 
+•- ls - lists the files and folders under the currect folder
+- ls -a - lists all the file(including the hidden ones)
+
+•to add a new directory i.e. a new folder write - mkdir name - i.e. make directory
+now to check if a repository is a git or not we just use 'ls -a' and if .git is not present we get that it is not under git.
+//line 34
+
+•Branch
+-make a copy of the same project
+-there are many teams working on the same project
+-each team secures a specific branch say -> frontend dev , bug fixer , styling .... branches
+use - git checkout nameOfAnotherBranch- -> it helps to move to another branch
+use - git checkout -b newBranch - -> to create a new branch
+use - git branch -d branchName - -> deletese the branch (deletion of a particular branch will only take place when under another branch)
+
+•••normal flow -> git > new repo > clone > add > commit > push(merge all branches with the main)
+
+•Merging 
+1.
+- git diff branchname - -> (normally compare current branch with the main)
+- git merge branchname - -> to merge two branches
+2. Pull Requests
+ while our branch is ready to be merged the person handling the main might get able to recheck the changes you made and then merge it with the main branch
+or might be a case where main branch is getting changed so till then request is not accepted.
+-> go to git hub and there is a option of pull request.
+
+
+•Pull Command
+-the merging is now done at github but at local level we dont see any change.
+use - git pull origin main -
+
+•Merge Conflict
+•if a change is made in the main branch of a file and another branch in the same file and same line
+now merging it creates a conflict to whether which change is to be finalised
+vscode gives us option -> accept current change , accept incoming change or accept both
+
+•Undoing changes
+1. change added but not commited - git reset filename -(for particular file) or - git reset - (for all files)
+2. change added and commited - git reset HEAD~1 -  (all the commited things are saved in a row with the latest commit marked as HEAD)
+~1 refers to the latest change in last commit
+use - git log - to check all commits
+3. for multiple commits 
