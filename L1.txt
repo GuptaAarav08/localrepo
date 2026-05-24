@@ -77,6 +77,7 @@ or might be a case where main branch is getting changed so till then request is 
 •Pull Command
 -the merging is now done at github but at local level we dont see any change.
 use - git pull origin main -
+use - git pull origin main --rebase - if changes made on git but not commited and changes then made on the local level
 
 •Merge Conflict
 •if a change is made in the main branch of a file and another branch in the same file and same line
